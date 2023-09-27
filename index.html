@@ -54,6 +54,10 @@
                   I'm interested in making robot learning more efficient and robust by studying how the notion of "ATTENTION" can be useful
                   for robots during observation, representation, and policy learning. My career goal is to make robot learning as easy and robust as possible.
                 </p>
+
+                <p>
+                  (* indicates equal contribution, † indicates equal advising)
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -108,6 +112,8 @@
 
 
             Two images change here!!!!!!!!!!!!!!!!!!11-->
+
+
             <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -135,17 +141,60 @@
                 Zheyuan Huang, 
                 <a href="https://www.researchgate.net/profile/Zexi-Chen-3" class="black-link">Zexi Chen</a>, 
                 <a href="https://ywang-zju.github.io/" class="black-link">Yue Wang</a>, 
-                <a href="https://www.researchgate.net/profile/Rong-Xiong" class="black-link">Rong-Xiong</a>, 
+                <a href="https://www.researchgate.net/profile/Rong-Xiong" class="black-link">Rong Xiong</a>
                 <br>
-                <em>IEEE International Conference on Real-time Computing and Robotics (RCAR), 2021</em>, 2022
+                <em>IEEE International Conference on Real-time Computing and Robotics (RCAR), 2021</em>
                 <br>
-                <a href="https://arxiv.org/pdf/2103.00947.pdf">arXiv</a>
+                <a href="https://arxiv.org/abs/2103.00947v2">arXiv</a>
                 <p></p>
                 <p>
                   We present a collaborative system with aerial and ground robots to gain precise recognition of feasible region. Taking the aerial robots' advantages of having large scale variance of view points of the same route which the ground robots is on, the collaboration work provides global information of road segmentation for the ground robot, thus enabling it to obtain feasible region and adjust its pose ahead of time.
                 </p>
               </td>
             </tr>		
+
+            <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='samurai_image'>
+                    <img src='images/SNN_after.png' width="160"></div>
+                  <img src='images/SNN_before.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function samurai_start() {
+                    document.getElementById('samurai_image').style.opacity = "1";
+                  }
+
+                  function samurai_stop() {
+                    document.getElementById('samurai_image').style.opacity = "0";
+                  }
+                  samurai_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-90525-5_79">
+                  <span class="papertitle">Control of Pneumatic Artificial Muscles with SNN-based Cerebellar-like Model</span>
+                </a>
+                <br>
+                <a href="https://cuhkleggedrobotlab.github.io/people/hongbo/" class="black-link">Hongbo Zhang</a><sup>&dagger;</sup>
+                <strong>Yunshuang Li</strong><sup>&dagger;</sup>,
+                Yipin Guo, <sup>&dagger;</sup>,
+                Xinyi Chen,
+                <a href="https://ieeexplore.ieee.org/author/38264350700" class="black-link">Qinyuan Ren</a>
+                <br>
+                <em>International Conference on Social Robotics (ICSR), 2021</em>
+                <br>
+                <a href="https://arxiv.org/abs/2109.10750#:~:text=Inspired%20by%20Cerebellum%27s%20vital%20functions%20in%20control%20of,controlling%20a%201-DOF%20robot%20arm%20driven%20by%20PAMs.">arXiv</a>
+                /
+                <a href="images/ICSR2021.png">poster</a>
+                <p></p>
+                <p>
+                  Inspired by Cerebellum's vital functions in control of human's physical movement, we propose a neural network model of Cerebellum based on spiking neuron networks (SNNs). We apply the model as a feed-forward controller in controlling a 1-DOF robot arm driven by PAMs. 
+                </p>
+              </td>
+            </tr>	
+
+            
 
       
       <!--Image -> Video no yellow bg
