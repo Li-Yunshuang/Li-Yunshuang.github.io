@@ -68,54 +68,50 @@
       
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
-           <!--  # Image -> Video
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/zipnerf.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/zipnerf.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
-            }
+          <tr onmouseout="im2contact_stop()" onmouseover="im2contact_start()"> <!--  bgcolor="#ffffd0"-->
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <img src="images/im2contact.gif" alt="GIF Example">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/im2contact.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function im2contact_start() {
+                  document.getElementById('zipnerf_image').style.opacity = "1";
+                }
 
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
-            }
-            zipnerf_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://jonbarron.info/zipnerf">
-            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
-          </a>
-          <br>
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>
-          <br>
-          <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-          <br>
-          <a href="http://jonbarron.info/zipnerf">project page</a>
-          /
-          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-          /
-          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
-          <p></p>
-          <p>
-          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
-          </p>
-        </td>
-      </tr>
+                function im2contact_stop() {
+                  document.getElementById('zipnerf_image').style.opacity = "0";
+                }
+                im2contact_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=h8halpbqB-&referrer=%5Bthe%20profile%20of%20Dinesh%20Jayaraman%5D(%2Fprofile%3Fid%3D~Dinesh_Jayaraman2)">
+                <span class="papertitle">Vision-Based Contact Localization Without Touch or Force Sensing</span>
+              </a>
+              <br>
+              Leon Kim,
+              <a class="myself"><strong>Yunshuang Li</strong></a>, 
+              <a href="https://www.grasp.upenn.edu/people/michael-posa/">Michael Posa</a>,
+              <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>
+              <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2023 &nbsp 
+              <br>
+              <a href="https://sites.google.com/view/im2contact/home">arXiv</a>
+              /
+              <a href="https://sites.google.com/view/im2contact/home">project page</a>
+              /
+              <a href="https://sites.google.com/view/im2contact/home">video</a>
+              <p></p>
+              <p>
+                We propose a challenging vision-based extrinsic contact localization task: with only a single RGB-D camera view of a robot workspace, identify when and where an object held by the robot contacts the rest of the environment. Our final approach im2contact demonstrates the promise of versatile general-purpose contact perception from vision alone, performing well for localizing various contact types (point, line, or planar; sticking, sliding, or rolling; single or multiple), and even under occlusions in its camera view.
+              </p>
+            </td>
+          </tr>
 
-
-            Two images change here!!!!!!!!!!!!!!!!!!11-->
             <tr onmouseout="MICCAI_stop()" onmouseover="MICCAI_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -139,7 +135,7 @@
                   <span class="papertitle">PEg TRAnsfer Workflow recognition challenge report: Do multimodal data improve recognition?</span>
                 </a>
                 <br>
-                Arnaud Huaulmé, Kanako Harada, (et al., including <a class="myself"><strong></strong> Yunshuang Li</a>, 
+                Arnaud Huaulmé, Kanako Harada, (et al., including <a class="myself"><strong>Yunshuang Li</strong></a>, 
                 <a href="https://www.researchgate.net/profile/Yonghao-Long-2" class="black-link">Yonghao Long</a>, 
                 <a href="https://www.cse.cuhk.edu.hk/~qdou/" class="black-link">Qi Dou</a>)
                 <br>
