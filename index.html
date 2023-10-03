@@ -67,7 +67,57 @@
           </tbody></table>
       
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
+           
+            <tr onmouseout="UVD_stop()" onmouseover="UVD_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='UVD'>
+                    <video  width=100% height=100% muted autoplay loop>
+                    <source src="images/UVD.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/UVD.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function UVD_start(){
+                    document.getElementById('UVD').style.opacity = "1";
+                  }
+  
+                  function UVD_stop() {
+                    document.getElementById('UVD').style.opacity = "0";
+                  }
+                  UVD_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://zcczhang.github.io/UVD/">
+                  <span class="papertitle">Universal Visual Decomposer: Long-Horizon Manipulation Made Easy</span>
+                </a>
+                <br>
+                <a href="https://zcczhang.github.io/">Zichen&#160;"Charles"&#160;Zhang</a><sup>&dagger;</sup>,
+                <a class="myself"><strong>Yunshuang Li</strong></a><sup>&dagger;</sup>,
+                <a href="https://obastani.github.io/">Osbert&#160;Bastani</a>,
+                <a href="https://homes.cs.washington.edu/~abhgupta/">Abhishek&#160;Gupta</a>,
+                <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh&#160;Jayaraman</a>,
+                <a href="https://www.seas.upenn.edu/~jasonyma/">Yecheng&#160;Jason&#160;Ma</a><sup>&#8225</sup>,
+                <a href="https://lucaweihs.github.io">Luca&#160;Weihs</a><sup>&#8225</sup>
+                <br>
+                <em>in Submission, 2023 &nbsp 
+                <br>
+                <a href="https://zcczhang.github.io/UVD/">arXiv</a>
+                /
+                <a href="https://zcczhang.github.io/UVD/">project page</a>
+                /
+                <a href="https://zcczhang.github.io/UVD/">video</a>
+                /
+                <a href="https://zcczhang.github.io/UVD/">code</a>
+                <p></p>
+                <p>
+                  We present Universal Visual Decomposer, an *off-the-shelf* task decomposition method that effectively produces semantically meaning subgoals across both simulated and real-robot environments for long-horizon visual manipulation tasks, without any task-specific knowledge or training. UVD discovered subgoals enable effective reward shaping for solving challenging multi-stage tasks using RL, and policies trained with IL exhibit significantly superior compositional generalization at test time.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="im2contact_stop()" onmouseover="im2contact_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -106,6 +156,8 @@
               <a href="https://sites.google.com/view/im2contact/home">project page</a>
               /
               <a href="https://sites.google.com/view/im2contact/home">video</a>
+              /
+              <a href="https://sites.google.com/view/im2contact/home">code</a>
               <p></p>
               <p>
                 We propose a challenging vision-based extrinsic contact localization task: with only a single RGB-D camera view of a robot workspace, identify when and where an object held by the robot contacts the rest of the environment. Our final approach im2contact demonstrates the promise of versatile general-purpose contact perception from vision alone, performing well for localizing various contact types (point, line, or planar; sticking, sliding, or rolling; single or multiple), and even under occlusions in its camera view.
